@@ -24,11 +24,10 @@ def base_parameters():
     parser.add_argument("--sample_interval", type=int, default=400, help="图像采样间隔")
     parser.add_argument("--input_shape", type=tuple, default=(3, 256, 256), help="输入图像的尺寸")
     parser.add_argument("--input_dim", type=int, default=100, help="生成器输出参数的长度")
-    parser.add_argument("--class_nummber", type=int, default=10, help="数据集中的类别数")
     opt = parser.parse_args()
     return opt
 
-# 创建文件夹，没有才创建。有的话就有吧
+# 判断文件夹是否存在，没有创建
 os.makedirs("images", exist_ok=True)
 os.makedirs("saved_models", exist_ok=True)
 # 是否使用GUP
