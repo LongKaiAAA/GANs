@@ -10,7 +10,7 @@ $ pip install -r requirements.txt
 
 ### 2.修改路径
 ```
-$ 在load.py中选择图片文件夹对应的路径
+$ 在load.py中修改图片所在文件夹的路径
 ```
 
 ### 3.运行
